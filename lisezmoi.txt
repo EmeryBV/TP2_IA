@@ -1,0 +1,7 @@
+Pour importer le code source dans Eclipse :
+- Cliquer sur File 
+- Open Projects from File System
+- Directory
+- Sélectionner le dossier contenant ce fichier lisezmoi.txt
+- Finish
+Le code source à compléter se trouve dans le dossier src du projet TP2_IA.
