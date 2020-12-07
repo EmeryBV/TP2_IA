@@ -3,7 +3,7 @@ Benoît;Djamel;Emma;Félix
 Gaëlle;Djamel;Amandine
 Cloé;Félix;Amandine
 Benoît;Xéna
-!Xéna;Amandine;Habiba
+Xéna;Amandine;Habiba
 Cloé;Djamel
 Xéna;Cloé;Amandine
 Xéna;Benoît;Djamel

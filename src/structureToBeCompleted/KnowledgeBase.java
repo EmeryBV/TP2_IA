@@ -103,11 +103,17 @@ public class KnowledgeBase {
 
                     // test d'applicabilite de la regle i
                     boolean applicable = true;
-                    if(estSemiPos(r)) applicable=false;
+                    if(estSemiPos(r)) applicable=true;
                     List<Atom> hp = r.getHypothesisPositif();
-                    for (int j = 0; applicable && j < hp.size(); j++)
-                        if (!bfSat.contains(r.getAtomHyp(j)))
+                    List<Atom> hn = r.getHypothesisNegatif();
+                    for (int j = 0; applicable && j < hp.size(); j++) {
+                        if (!bfSat.contains(r.getHypothesisPositif().get(j)))
                             applicable = false;
+                    }
+                    for (int j = 0; applicable && j < hn.size(); j++) {
+                        if (bfSat.contains(r.getHypothesisNegatif().get(j)))
+                            applicable = false;
+                    }
                     if (applicable) {
                         Appliquee[i] = true;
                         Atom c = r.getConclusion();
